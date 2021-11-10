@@ -18,16 +18,6 @@ services:
     networks:
       - backend
 
-  mongodb:
-    image: mongo:4.4.6
-    container_name: mongodb
-    volumes:
-      - ~/mongo:/data/db
-    ports:
-      - "27017:27017"
-    networks:
-      - backend
-
 networks:
   backend:
     driver: "bridge"
